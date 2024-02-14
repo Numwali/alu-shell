@@ -1,12 +1,52 @@
 #!/usr/bin/env bash
-#Displays nbrs from 1 to 20
-count=1
-while [ $count -le 20 ] do
-	echo "$count"
-	case $count in
-		"4") echo "bad luck from Chine";;
-		"9") echo "bad luck from Japan";;
-		"17") echo "bad luck from Italy";;
-	esac
-	(( count++ ))
+#change the output of 4th, 9th and 17 iteration
+
+
+
+((n=1))
+
+while [ $n -le 20 ]; do
+
+
+
+case $n in
+
+	4)
+
+	echo "$n"
+
+	echo "bad luck from China"
+
+	;;
+
+	9)
+
+	echo "$n"
+
+	echo "bad luck from Japan"
+
+	;;
+
+	17)
+
+	echo "$n"
+
+	echo "bad luck from Italy"
+
+	;;
+
+
+
+
+
+	*)
+
+
+
+	echo "$n"
+
+esac
+
+	((n++))
+
 done
